@@ -1,0 +1,42 @@
+node-package-preamble (0.1.0-4) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update standards version to 4.5.1, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Wed, 15 Sep 2021 09:32:39 +0100
+
+node-package-preamble (0.1.0-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.4.1, no changes needed.
+  * Apply multi-arch hints.
+    + node-package-preamble: Add Multi-Arch: foreign.
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 28 Aug 2021 23:02:39 +0100
+
+node-package-preamble (0.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Make build reproducible. Thanks to Chris Lamb (Closes: #935790)
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Switch install to pkg-js-tools
+  * Fix debian/copyright
+  * Update VCS fields to salsa
+  * Fix autopkgtest
+  * Remove useless debian/dirs
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 26 Aug 2019 11:13:57 +0200
+
+node-package-preamble (0.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #874591)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 07 Sep 2017 22:06:44 +0530

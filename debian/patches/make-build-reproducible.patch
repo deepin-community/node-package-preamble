@@ -1,0 +1,18 @@
+Description: make the output reproducible
+Author: Chris Lamb <lambt@debian.org>
+Bug-Debian: https://bugs.debian.org/935790
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-08-26
+
+--- a/bin/preamble
++++ b/bin/preamble
+@@ -8,7 +8,7 @@
+   var json = JSON.parse(text);
+   process.stdout.write("// " + (json.homepage || json.name)
+       + " Version " + json.version + "."
+-      + " Copyright " + (new Date).getFullYear()
++      + " Copyright " + (new Date(process.env.SOURCE_DATE_EPOCH ? (process.env.SOURCE_DATE_EPOCH * 1000) : new Date().getTime())).getFullYear()
+       + " " + json.author.name + (/\.$/.test(json.author.name) ? "" : ".")
+       + os.EOL);
+ });
