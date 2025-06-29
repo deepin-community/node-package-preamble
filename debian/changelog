@@ -1,3 +1,17 @@
+node-package-preamble (0.1.0-5) unstable; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed
+  * Bump debhelper compatibility level to 13
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+  * Update nodejs dependency to nodejs:any
+
+ -- Yadd <yadd@debian.org>  Sun, 21 Nov 2021 14:08:19 +0100
+
 node-package-preamble (0.1.0-4) unstable; urgency=medium
 
   [ Debian Janitor ]

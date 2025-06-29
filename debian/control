@@ -4,20 +4,19 @@ Uploaders: Pirate Praveen <praveen@debian.org>
 Section: javascript
 Priority: optional
 Build-Depends:
- debhelper-compat (= 12)
- , dh-buildinfo
- , nodejs
- , pkg-js-tools (>= 0.9.8)
-Standards-Version: 4.5.1
+ debhelper-compat (= 13)
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-package-preamble
 Vcs-Git: https://salsa.debian.org/js-team/node-package-preamble.git
 Homepage: https://github.com/mbostock/preamble
+Rules-Requires-Root: no
 
 Package: node-package-preamble
 Architecture: all
 Depends:
  ${misc:Depends}
- , nodejs
+ , nodejs:any
 Multi-Arch: foreign
 Description: Generate a tiny preamble from a package.json
  Generates a minimalist preamble from a package.json. For example,
